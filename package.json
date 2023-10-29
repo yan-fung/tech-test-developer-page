@@ -1,0 +1,24 @@
+{
+  "name": "tech-test-developer-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yan-fung/tech-test-developer-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yan-fung/tech-test-developer-page/issues"
+  },
+  "homepage": "https://github.com/yan-fung/tech-test-developer-page#readme",
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
+}
