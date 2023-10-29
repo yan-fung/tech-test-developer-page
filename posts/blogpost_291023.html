@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryalto Developer Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--=========================== Navbar ===========================-->
+    <nav class="navbar">
+      <div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <img
+          src="../images/ryalto-logo-lg.png"
+          alt="logo"
+          width="200px"
+          height="70px"
+        />
+        <div class="nav-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="./pages/teams.html">Our Teams</a></li>
+            <li><a href="./pages/careers.html">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--=========================== Blog section ===========================-->
+    <section class="blog-page" id="blog">
+      <div class="latest-post-page">
+        <h3>Migrating to GitHub Actions for Rails CI</h3>
+        <div class="post-pic">
+          <img src="../images/pic1.jpeg" />
+        </div>
+        <div class="post">
+          <div class="post-info">
+            <img src="../images/profile-pic.jpeg" alt="author-profile-pic" />
+            <p>Phil posted on 29 October 2023</p>
+          </div>
+          <p>
+            For the last couple of years I’ve been using Ruby.ci to power CI
+            checks on my rails applications. RubyCI is one of those amazing
+            tools that was zero effort to setup and ran flawlessly, it was
+            exactly how I feel that DevOps should be. Sadly, Alex has decided to
+            retire the project and move onto other things.
+          </p>
+          <p>
+            RubyCI is shutting down on October 15th. Alex gave all users a
+            month’s notice to migrate away to another CI tool, his suggestion
+            was to go with Circle CI, but I decided on GitHub actions. I like
+            the idea of running your CI checks close to your code. GitHub
+            actions are well documented, backed by a strong community and has a
+            well implemented marketplace. Which, after the initial
+            configuration, does make setting things up quite a bit easier.
+          </p>
+        </div>
+      </div>
+    </section>
+    <br />
+    <script src="../style.js"></script>
+  </body>
+</html>

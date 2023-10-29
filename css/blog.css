@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgba(55, 49, 42, 0.897);
+    background-color: rgb(249, 249, 249);
+  }
+  
+  /* Navbar */
+  .navbar {
+    margin: 0%;
+    position: sticky;
+    top: 0.1px;
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .navbar img {
+    left: 50px; 
+    bottom: 10px; 
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-links ul li {
+    display: inline-block;
+  }
+  
+  .nav-links ul li a {
+    position: relative;
+    color: rgb(19, 17, 17);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 25px;
+    text-align: center;
+    font-family: 'Reem Kufi Ink', sans-serif;
+  }
+  
+  .nav-links ul li a:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(231, 161, 76);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+  }
+  
+  .nav-links ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .toggle-button {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+  }
+  
+  .toggle-button .bar {
+      height: 3px;
+      width: 100%;
+      background-color: rgb(154, 69, 69);
+      border-radius: 10px;
+  }
+  
+  /* Blog section */
+  .blog-page{
+    width: 100%;
+    text-align: left;
+  }
+
+  .post {
+    width: 80%;
+  }
+
+  .post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .post-info img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    padding-right: 10px;
+  }
+
+  .latest-post-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Mobile device */
+@media (max-width: 780px) {
+  
+  body {
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Geneva, Verdana,Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgba(55, 49, 42, 0.897);
+  }
+  
+  .navbar h1 { 
+    display: block;
+    margin-top: 20px;
+    justify-self: center;
+  }
+  
+  .toggle-button {
+    display: flex;
+  }
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar {
+    flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-links ul li {
+    display: flex;
+    justify-content: center;
+    padding-left: 35px;
+  }
+  
+  .nav-links.active{
+      display: flex;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .latest-post-page {
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+
+  .post-pic img {
+    width: 350px;
+    height: 250px;
+  }
+}

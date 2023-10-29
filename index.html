@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryalto Developer Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,6 +44,7 @@
         <div class="nav-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="./pages/teams.html">Our Teams</a></li>
             <li><a href="./pages/careers.html">Careers</a></li>
           </ul>
@@ -90,6 +91,37 @@
         ></a>
       </div>
     </section>
+    <!--=========================== Blog section ===========================-->
+    <section class="blog" id="blog">
+      <div class="blog-title">
+        <span>DEVELOPER BLOG</span>
+
+        <div class="latest-post">
+          <div>
+            <img src="./images/pic1.jpeg" />
+          </div>
+          <div class="post">
+            <div class="post-info">
+              <img src="./images/profile-pic.jpeg" alt="author-profile-pic" />
+              <p>Phil posted on 29 October 2023</p>
+            </div>
+            <span>Migrating to GitHub Actions for Rails CI</span>
+            <p>
+              For the last couple of years I’ve been using Ruby.ci to power CI
+              checks on my rails applications. RubyCI is one of those amazing
+              tools that was zero effort to setup and ran flawlessly, it was
+              exactly how I feel that DevOps should be. Sadly, Alex has decided
+              to retire the project and move onto other things.
+            </p>
+            <a href="./posts/blogpost_291023.html">
+              <button class="read-more-btn">READ MORE</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+
     <script src="style.js"></script>
   </body>
 </html>
