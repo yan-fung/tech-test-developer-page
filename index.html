@@ -1,31 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryalto Developer Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!--=========================== Navbar ===========================-->
     <nav class="navbar">
-        <img src="./images/ryalto-logo-lg.png" alt="" width="210px" height="80px">
+      <div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <img
+          src="./images/ryalto-logo-lg.png"
+          alt="logo"
+          width="200px"
+          height="70px"
+        />
         <div class="nav-links">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/teams.html">Our Teams</a></li>
-                <li><a href="./pages/careers.html">Careers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/teams.html">Our Teams</a></li>
+            <li><a href="./pages/careers.html">Careers</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-</body>
+    <!--=========================== Home section ===========================-->
+    <section class="home" id="home">
+      <!-- home image -->
+      <div class="aboutus-img">
+        <img src="./images/title.png" />
+      </div>
+      <div class="aboutus-text">
+        <h1>WELCOME TO RYALTO DEVELOPER PAGE!</h1>
+        <p>
+          We're excited to introduce you to our Amazing Tech Team here at
+          Ryalto. This page is like a backstage pass, giving you a sneak peek
+          into the amazing things we're working on. If you're curious about the
+          art of coding and want to discover some coding tricks and magic, don't
+          miss out —
+        </p>
+        <span>Subscribe to our newsletters now!</span>
+      </div>
+      <div class="subscrption-form">
+        <form action="your_server_script.php" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+      <div class="social">
+        <a href="https://github.com/phil-6" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/ryalto/" target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/ryalto" target="_blank"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+      </div>
+    </section>
+    <script src="style.js"></script>
+  </body>
 </html>
