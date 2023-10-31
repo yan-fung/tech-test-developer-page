@@ -1,7 +1,6 @@
 body {
   margin: 0;
   text-align: center;
-  vertical-align: middle;
   font-family: Geneva, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   color: rgba(55, 49, 42, 0.897);
@@ -63,29 +62,29 @@ body {
 }
 
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: rgb(154, 69, 69);
-    border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(154, 69, 69);
+  border-radius: 10px;
 }
 
 /* Home section */
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutus-img img {
@@ -125,7 +124,6 @@ body {
   font:400 18px/32px 'Reem Kufi Ink', sans-serif;
   padding:5px 20px;
   text-transform:uppercase;
-
  }
 
  .subscrption-form input[type="submit"]:hover {
@@ -134,16 +132,16 @@ body {
 }
 
 .social a {
-    font-size: 40px;
-    padding-left: 50px;
-    color: rgba(100, 100, 105, 0.897);
+  font-size: 40px;
+  padding-left: 50px;
+  color: rgba(100, 100, 105, 0.897);
 }
 
 .social a:hover {
-    color: rgb(228, 166, 96);
+  color: rgb(228, 166, 96);
 }
 
-/* Blog section */
+/* Blog section - latest post */
 .blog-title span {
   font-size: 30px;
   color: rgba(36, 151, 228, 0.897);
@@ -152,7 +150,6 @@ body {
 .blog {
   margin-top: 100px;
   width: 100%;
-  height: 100vh;
   padding-top: 160px;
 }
 
@@ -162,7 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .post-info img {
@@ -201,10 +198,48 @@ body {
   color: rgb(58, 59, 61);
 }
 
+/* Blog section - previous post */
+.section {
+  width: 85%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  grid-gap: 25px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 8px 0 px rgba(0,0,0,4);
+  padding-bottom: 20px;
+}
+
+.image-section {
+  min-height: 250px;
+}
+
+.card .img-one {
+  background-image: url("../images/img-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .img-two {
+  background-image: url("../images/img-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .img-three {
+  background-image: url("../images/img-3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /* Mobile device */
 @media (max-width: 780px) {
-
   body {
       margin: 0;
       text-align: center;
@@ -312,7 +347,7 @@ body {
     color:#ffffff;
     display:inline-block;
     font:400 18px/32px 'Reem Kufi Ink', sans-serif;
-  padding:5px 20px;
+    padding:5px 20px;
   }
 
   .read-more-btn:hover {
